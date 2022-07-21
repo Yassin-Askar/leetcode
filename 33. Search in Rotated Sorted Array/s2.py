@@ -1,4 +1,3 @@
-from turtle import right
 
 
 class Solution:
