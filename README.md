@@ -8,3 +8,6 @@
 |22. Generate Parentheses|
 |876. Middle of the Linked List|
 |567. Permutation in String|
+
+# language
+Python
