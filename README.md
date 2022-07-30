@@ -8,7 +8,7 @@
 |22. Generate Parentheses|
 |876. Middle of the Linked List|
 |567. Permutation in String|
-|916. Word Subsets}
+|916. Word Subsets|
 
 ## Language
 
