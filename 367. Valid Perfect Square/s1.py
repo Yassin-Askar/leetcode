@@ -3,16 +3,16 @@ from pickle import HIGHEST_PROTOCOL
 
 class Solution:
     def isPerfectSquare(self, num: int) -> bool:
-        low, hight = 0, num
+        low, height = 0, num
 
-        while low <= hight:
-            mid = (low+hight)//2
+        while low <= height:
+            mid = (low+height)//2
             if (mid*mid) == num:
                 return True
             if (mid * mid) < num:
                 low = mid + 1
             else:
-                hight = mid - 1
+                height = mid - 1
         return False
 
 

@@ -1,15 +1,15 @@
 class Solution:
     def search(self, nums: list[int], target: int) -> int:
         low = mid = 0
-        hight = len(nums) - 1
+        height = len(nums) - 1
 
-        while low <= hight:
-            mid = (low+hight)//2
+        while low <= height:
+            mid = (low+height)//2
             guess = nums[mid]
             if guess == target:
                 return mid
             if guess > target:
-                hight = mid - 1
+                height = mid - 1
             else:
                 low = mid + 1
 

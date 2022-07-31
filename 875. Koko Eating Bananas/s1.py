@@ -3,20 +3,20 @@ import math
 
 class Solution:
     def minEatingSpeed(self, piles: list[int], h: int) -> int:
-        hight = max(piles)
+        height = max(piles)
         mid = 0
         low = 1
         k = mid
 
-        while low <= hight:
-            mid = (hight + low)//2
+        while low <= height:
+            mid = (height + low)//2
             hours = 0
             for pile in piles:
                 hours += math.ceil(pile/mid)
 
             if hours <= h:
                 k = mid
-                hight = mid - 1
+                height = mid - 1
             else:
                 low = mid + 1
 
