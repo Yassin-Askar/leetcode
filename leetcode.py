@@ -9,8 +9,6 @@ import pathlib
 import re
 import sys
 
-from click import Parameter
-
 
 class Color:
     GREEN = '\x1b[7;30;42m'
