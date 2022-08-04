@@ -5,18 +5,18 @@ class Solution:
             print("=============")
 
             low = 0
-            height = len(nums)-1
+            high = len(nums)-1
             if nums[-1] >= 0:
                 continue
-            while low <= height:
-                mid = (low + height) // 2
-                print(f"low = {low} height = {height} mid ={mid}")
-                if low == height:
+            while low <= high:
+                mid = (low + high) // 2
+                print(f"low = {low} high = {high} mid ={mid}")
+                if low == high:
 
                     res += (len(nums)-mid)
                     break
                 if nums[mid] < 0:
-                    height = mid
+                    high = mid
                 else:
                     low = mid + 1
 

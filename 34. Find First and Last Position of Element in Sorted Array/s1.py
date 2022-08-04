@@ -6,22 +6,22 @@ class Solution:
         res = []
         for d in range(2):
             i = -1
-            low, height = 0, len(nums)-1
+            low, high = 0, len(nums)-1
 
-            while low <= height:
-                mid = (low + height)//2
+            while low <= high:
+                mid = (low + high)//2
                 guess = nums[mid]
                 if guess < target:
                     low = mid + 1
                 elif guess > target:
-                    height = mid - 1
+                    high = mid - 1
                 else:
                     i = mid
 
                     if d:
                         low = mid + 1
                     else:
-                        height = mid - 1
+                        high = mid - 1
             res.append(i)
         return res
 

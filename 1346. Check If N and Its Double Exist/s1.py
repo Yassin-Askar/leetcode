@@ -8,21 +8,21 @@ class Solution:
         for n in range(len(arr)):
 
             low = 0
-            height = len(arr)-1
+            high = len(arr)-1
             if arr[n] == 0:
                 count += 1
                 if count == 2:
                     return True
                 continue
-            while low <= height:
+            while low <= high:
 
-                mid = (low + height)//2
+                mid = (low + high)//2
 
                 if arr[mid] == (2*arr[n]):
 
                     return True
                 elif arr[mid] > (2*arr[n]):
-                    height = mid - 1
+                    high = mid - 1
                 else:
                     low = mid + 1
         return False

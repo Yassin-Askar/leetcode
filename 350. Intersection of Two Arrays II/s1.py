@@ -5,10 +5,10 @@ class Solution:
         res = []
         nums2 = sorted(nums2)
         for num in nums1:
-            height = len(nums2)-1
+            high = len(nums2)-1
             low = 0
-            while low <= height:
-                mid = (low + height) // 2
+            while low <= high:
+                mid = (low + high) // 2
 
                 if nums2[mid] == num:
                     res.append(num)
@@ -16,7 +16,7 @@ class Solution:
                     break
 
                 if nums2[mid] >= num:
-                    height = mid - 1
+                    high = mid - 1
                 else:
                     low = mid + 1
         return res

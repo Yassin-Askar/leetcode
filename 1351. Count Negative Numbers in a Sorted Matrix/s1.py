@@ -4,16 +4,16 @@ class Solution:
         for nums in grid:
 
             low = 0
-            height = len(nums)-1
-            while low <= height:
+            high = len(nums)-1
+            while low <= high:
 
-                mid = (low + height) // 2
+                mid = (low + high) // 2
 
                 if nums[low] < 0:
                     res += (len(nums)-low)
                     break
-                elif nums[height] > 0:
-                    height = mid - 1
+                elif nums[high] > 0:
+                    high = mid - 1
                 else:
                     low = low + 1
         return res

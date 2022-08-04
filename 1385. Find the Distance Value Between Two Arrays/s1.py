@@ -7,14 +7,14 @@ class Solution:
         for num in arr1:
             low = 0
             valid = True
-            height = len(arr2)
-            while low < height:
-                mid = (height + low)//2
+            high = len(arr2)
+            while low < high:
+                mid = (high + low)//2
                 if abs(arr2[mid]-num) <= d:
                     valid = False
                     break
                 elif arr2[mid] > num:
-                    height = mid
+                    high = mid
                 else:
                     low = mid + 1
 
