@@ -16,6 +16,7 @@ class Solution:
                 res.append(nums[q[0]])
                 left += 1
             right += 1
+        return res
 
 
 nums = [1, 3, -1, -3, 5, 3, 6, 7]
