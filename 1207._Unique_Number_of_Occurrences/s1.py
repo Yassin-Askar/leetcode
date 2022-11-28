@@ -9,7 +9,6 @@ class Solution:
                 numbers_count[num] = 1
         for v in numbers_count.items():
             set_number.add(v[1])
-
         return len(numbers_count) == len(set_number)
 
 
