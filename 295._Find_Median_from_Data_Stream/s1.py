@@ -15,13 +15,8 @@ class MedianFinder:
         hq.heappush(self.second_part, -hq.heappop(self.first_part))
         if len(self.first_part) < len(self.second_part):
             hq.heappush(self.first_part, -hq.heappop(self.second_part))
-        print(
-            f"first_part: {self.first_part}, second_part: {self.second_part}")
 
     def findMedian(self) -> float:
         if len(self.first_part) == len(self.second_part):
             return (-self.first_part[0] + (self.second_part[0])) / 2
-        return self.second_part[0]
-
-
-arr = MedianFinder()
+        return -self.first_part[0]
