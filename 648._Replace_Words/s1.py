@@ -1,7 +1,7 @@
 class Solution:
     def replaceWords(self, dictionary: list[str], sentence: str) -> str:
         dictionaryset = set(dictionary)
-        l = 0
+
         for word in sentence.split(" "):
             r = 0
             while r < len(word)-1:
