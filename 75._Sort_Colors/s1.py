@@ -6,9 +6,7 @@ class Solution:
                 number_map[nums[i]] = 1
             else:
                 number_map[nums[i]] += 1
-
         i = 0
-
         for k, v in number_map.items():
             val = v
             while val > 0:
