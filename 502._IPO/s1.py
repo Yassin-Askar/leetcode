@@ -10,7 +10,7 @@ class Solution:
         for x in range(0, len(capital)):
             heappush(capitals_min_heap, (capital[x], x))
 
-        for _ in range(k):
+        for _ in range(k): 
 
             while capitals_min_heap and capitals_min_heap[0][0] <= current_capital:
                 c, i = heappop(capitals_min_heap)
