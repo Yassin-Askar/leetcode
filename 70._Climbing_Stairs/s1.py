@@ -8,8 +8,5 @@ class Solution:
 		return one
 
 
-
-
-
 n = 5
 print(Solution(). climbStairs(n = n , ))
